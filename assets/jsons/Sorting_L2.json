@@ -1,0 +1,1442 @@
+[
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "elephant",
+            "pig",
+            "sheep"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "elephant",
+            "pig",
+            "sheep"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "sheep",
+            "pig",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "sheep",
+            "pig",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "elephant",
+            "pig",
+            "cat"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "elephant",
+            "pig",
+            "cat"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "cat",
+            "pig",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "cat",
+            "pig",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "elephant",
+            "sheep",
+            "cat"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "elephant",
+            "sheep",
+            "cat"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "cat",
+            "sheep",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "cat",
+            "sheep",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "pig",
+            "sheep",
+            "cat"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "pig",
+            "sheep",
+            "cat"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "cat",
+            "sheep",
+            "pig"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "cat",
+            "sheep",
+            "pig"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "elephant",
+            "pig",
+            "sheep"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "elephant",
+            "pig",
+            "sheep"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "sheep",
+            "pig",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "sheep",
+            "pig",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "elephant",
+            "pig",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "elephant",
+            "pig",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "mouse",
+            "pig",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "mouse",
+            "pig",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "elephant",
+            "sheep",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "elephant",
+            "sheep",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "mouse",
+            "sheep",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "mouse",
+            "sheep",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "pig",
+            "sheep",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "pig",
+            "sheep",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "mouse",
+            "sheep",
+            "pig"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "mouse",
+            "sheep",
+            "pig"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "elephant",
+            "pig",
+            "cat"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "elephant",
+            "pig",
+            "cat"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "cat",
+            "pig",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "cat",
+            "pig",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "elephant",
+            "pig",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "elephant",
+            "pig",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "mouse",
+            "pig",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "mouse",
+            "pig",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "elephant",
+            "cat",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "elephant",
+            "cat",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "mouse",
+            "cat",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "mouse",
+            "cat",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "pig",
+            "cat",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "pig",
+            "cat",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "mouse",
+            "cat",
+            "pig"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "mouse",
+            "cat",
+            "pig"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "elephant",
+            "sheep",
+            "cat"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "elephant",
+            "sheep",
+            "cat"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "cat",
+            "sheep",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "cat",
+            "sheep",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "elephant",
+            "sheep",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "elephant",
+            "sheep",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "mouse",
+            "sheep",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "mouse",
+            "sheep",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "elephant",
+            "cat",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "elephant",
+            "cat",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "mouse",
+            "cat",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "mouse",
+            "cat",
+            "elephant"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "sheep",
+            "cat",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "sheep",
+            "cat",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "mouse",
+            "cat",
+            "sheep"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "mouse",
+            "cat",
+            "sheep"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "pig",
+            "sheep",
+            "cat"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "pig",
+            "sheep",
+            "cat"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "cat",
+            "sheep",
+            "pig"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "cat",
+            "sheep",
+            "pig"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "pig",
+            "sheep",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "pig",
+            "sheep",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "mouse",
+            "sheep",
+            "pig"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "mouse",
+            "sheep",
+            "pig"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "pig",
+            "cat",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "pig",
+            "cat",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "mouse",
+            "cat",
+            "pig"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "mouse",
+            "cat",
+            "pig"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "sheep",
+            "cat",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the heavier the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "sheep",
+            "cat",
+            "mouse"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the faster it is.",
+        "property": "fast to slow by speed",
+        "correct": [
+            "mouse",
+            "cat",
+            "sheep"
+        ]
+    },
+    {
+        "rule": "In this world, the lighter the animal is, the slower it is.",
+        "property": "slow to fast by speed",
+        "correct": [
+            "mouse",
+            "cat",
+            "sheep"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "horse",
+            "dog",
+            "chick"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "horse",
+            "dog",
+            "chick"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "chick",
+            "dog",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "chick",
+            "dog",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "horse",
+            "dog",
+            "tortoise"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "horse",
+            "dog",
+            "tortoise"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "tortoise",
+            "dog",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "tortoise",
+            "dog",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "horse",
+            "chick",
+            "tortoise"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "horse",
+            "chick",
+            "tortoise"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "tortoise",
+            "chick",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "tortoise",
+            "chick",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "dog",
+            "chick",
+            "tortoise"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "dog",
+            "chick",
+            "tortoise"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "tortoise",
+            "chick",
+            "dog"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "tortoise",
+            "chick",
+            "dog"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "horse",
+            "dog",
+            "chick"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "horse",
+            "dog",
+            "chick"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "chick",
+            "dog",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "chick",
+            "dog",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "horse",
+            "dog",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "horse",
+            "dog",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "snail",
+            "dog",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "snail",
+            "dog",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "horse",
+            "chick",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "horse",
+            "chick",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "snail",
+            "chick",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "snail",
+            "chick",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "dog",
+            "chick",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "dog",
+            "chick",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "snail",
+            "chick",
+            "dog"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "snail",
+            "chick",
+            "dog"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "horse",
+            "dog",
+            "tortoise"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "horse",
+            "dog",
+            "tortoise"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "tortoise",
+            "dog",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "tortoise",
+            "dog",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "horse",
+            "dog",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "horse",
+            "dog",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "snail",
+            "dog",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "snail",
+            "dog",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "horse",
+            "tortoise",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "horse",
+            "tortoise",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "snail",
+            "tortoise",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "snail",
+            "tortoise",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "dog",
+            "tortoise",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "dog",
+            "tortoise",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "snail",
+            "tortoise",
+            "dog"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "snail",
+            "tortoise",
+            "dog"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "horse",
+            "chick",
+            "tortoise"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "horse",
+            "chick",
+            "tortoise"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "tortoise",
+            "chick",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "tortoise",
+            "chick",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "horse",
+            "chick",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "horse",
+            "chick",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "snail",
+            "chick",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "snail",
+            "chick",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "horse",
+            "tortoise",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "horse",
+            "tortoise",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "snail",
+            "tortoise",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "snail",
+            "tortoise",
+            "horse"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "chick",
+            "tortoise",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "chick",
+            "tortoise",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "snail",
+            "tortoise",
+            "chick"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "snail",
+            "tortoise",
+            "chick"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "dog",
+            "chick",
+            "tortoise"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "dog",
+            "chick",
+            "tortoise"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "tortoise",
+            "chick",
+            "dog"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "tortoise",
+            "chick",
+            "dog"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "dog",
+            "chick",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "dog",
+            "chick",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "snail",
+            "chick",
+            "dog"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "snail",
+            "chick",
+            "dog"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "dog",
+            "tortoise",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "dog",
+            "tortoise",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "snail",
+            "tortoise",
+            "dog"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "snail",
+            "tortoise",
+            "dog"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "chick",
+            "tortoise",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the faster the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "chick",
+            "tortoise",
+            "snail"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the heavier it is.",
+        "property": "heavy to light by weight",
+        "correct": [
+            "snail",
+            "tortoise",
+            "chick"
+        ]
+    },
+    {
+        "rule": "In this world, the slower the animal is, the lighter it is.",
+        "property": "light to heavy by weight",
+        "correct": [
+            "snail",
+            "tortoise",
+            "chick"
+        ]
+    }
+]
