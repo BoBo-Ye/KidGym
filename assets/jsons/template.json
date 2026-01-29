@@ -1,0 +1,171 @@
+{
+    "Classification": [
+        {
+            "level": [1, 2, 3, 4],
+            "goal": "Place {item_1} in the {color_1} basket and {item_2} in the {color_2} basket.",
+            "action": {
+                "pick_item": "pick up the item with label {item_id}",
+                "put_item": "put the item from backpack {backpack_id} into the basket with label {basket_id}"
+            }
+        }
+    ],
+
+    "Counting": [
+        {
+            "level": [1, 2, 3],
+            "goal": "Collect {number} {item}(s) from the scene and place them in the backpack. Make sure you have gathered exactly this amount, no more and no less. You should be aware that there may be 1 to 3 items of different quantities in one grid. Once you have collected this number of {item}s, select the action: “I have already collected {number} {item}s.",
+            "action": {
+                "pick_item": "pick up the {item} with label {item_id}",
+                "end_task": "I have already collected {number} {item}(s)"
+            }
+        }
+    ],
+
+    "Decode": [
+        {
+            "level": [1, 2, 3, 4],
+            "goal": "There are arrow-connected items with one-to-one correspondence(s) shown on the left margin and a target item displayed in the black box in the upper left corner. You need to select the correct corresponding item for the target based on the correspondence(s).",
+            "action": {
+                "chooose_item": "choose the item with label {item_id}"
+            }
+        }
+    ],
+
+    "Filling": [
+        {
+            "level": [1, 2, 3],
+            "goal": "There is a target item shown on the left margin. You need to fill the correct piece(s) from the backpack to complete the missing part(s) of the frame in the scene, ensuring they match and align with the target item.",
+            "action": {
+                "place_piece": "place the piece from backpack {backpack_id} into the grid at position {symbol}"
+            }
+        }
+    ],
+
+    "Maze": [
+        {
+            "level": [1, 2, 3],
+            "goal": "There is a diamond shown in the scene, and you need to obtain the diamond. When your path is blocked by a door, you can use a key of the same color to unlock it. Note: You must pick up the key first before you can use it to unlock doors.",
+            "action": {
+                "obtain_object": "obtain object with label {obj_id}",
+                "open_door": "use the key in backpack {backpack_id} to unlock door with label {obj_id}"
+            }
+        }
+    ],
+
+    "Memory_Decode": [
+        {
+            "level": [1, 2, 3, 4],
+            "goal": "In the first image, arrow-connected items with one-to-one correspondence(s) will be shown on the left margin that you need to remember. In the following images, the correspondence(s) will not be shown, and a target item will be generated in the black box in the upper left corner. You need to select the correct corresponding item for the target based on the pairing you remembered in the first image. If you understand the rules, choose 'continue' to begin the task.",
+            "goal_1": "In the first image, arrow-connected items with one-to-one correspondence(s) will be shown on the left margin that you need to remember. In the following images, the correspondence(s) will not be shown, and a target item will be generated in the black box in the upper left corner. You need to select the correct corresponding item for the target based on the pairing you remembered in the first image.",
+            "action": {
+                "continue": "continue",
+                "choose_item": "choose the item with label {item_id}"
+            }
+        }
+    ],
+
+    "Memory_Filling": [
+        {
+            "level": [1, 2, 3],
+            "goal": "In the first image, a target item will be shown on the left margin that you need to remember. In the following images, the target item will not be shown. You need to fill the correct piece(s) from the backpack to complete the missing part(s) of the frame in the scene, ensuring they match and align with the target item. If you understand the rules, choose 'continue' to begin the task.",
+            "goal_1": "In the first image, a target item will be shown on the left margin that you need to remember. In the following images, the target item will not be shown. You need to fill the correct piece(s) from the backpack to complete the missing part(s) of the frame in the scene, ensuring they match and align with the target item.",
+            "action": {
+                "continue": "continue",
+                "place_piece": "place the piece from backpack {backpack_id} into the grid at position {symbol}"
+            }
+        }
+    ],
+
+    "Memory_Maze": [
+        {
+            "level": [1, 2, 3],
+            "goal": "In the first image, a diamond will be shown in the scene that you need to remember its location. In the following images, the diamond will not be shown and several treasure boxes will be generated in the scene. You must choose to open the treasure box located at the diamond's original position to obtain the diamond. When your path is blocked by a door, you can use a key of the same color to unlock it. Note: You must obtain the key before you can use it to unlock doors. If you understand the rules, choose 'continue' to begin the task.",
+            "goal_1": "In the first image, a diamond will be shown in the scene that you need to remember its location. In the following images, the diamond will not be shown and several treasure boxes will be generated in the scene. You must choose to open the treasure box located at the diamond's original position to obtain the diamond. When your path is blocked by a door, you can use a key of the same color to unlock it. Note: You must obtain the key before you can use it to unlock doors.",
+            "action": {
+                "continue": "continue",
+                "obtain_object": "obtain object with label {obj_id}",
+                "open_door": "use the key in backpack {backpack_id} to unlock door with label {obj_id}"
+            }
+        }
+    ],
+
+    "Placement": [
+        {
+            "level": 1,
+            "goal": "A direction will be provided: {orientation}. Determine its opposite direction, and then place {place_obj_name} in the corresponding location around {center_name}.",
+            "action": {
+                "place_object": "place {place_obj_name} at grid {grid_id}"
+            }
+        },
+        {
+            "level": 2,
+            "goal": "A direction will be provided: {orientation}. Determine its opposite direction, and then place {place_obj_name} in the corresponding location around {center_name}.",
+            "action": {
+                "place_object": "place {place_obj_name} at grid {grid_id}"
+            }
+        },
+        {
+            "level": 3,
+            "goal": "A direction will be provided: {orientation}. From its opposite direction, determine the next {clock_direction} position, then place {place_obj_name} in the corresponding location around {center_name}.",
+            "action": {
+                "place_object": "place {place_obj_name} at grid {grid_id}"
+            }
+        }
+    ],
+
+    "Puzzle": [
+        {
+            "level": [1, 2, 3],
+            "goal": "There is a target item shown on the left margin. You need to fill the correct piece(s) from the backpack to complete the missing part(s) of the frame in the scene, ensuring they match and align with the target item.",
+            "action": {
+                "place_piece": "place the piece from backpack {backpack_id} into the grid at position {symbol}"
+            }
+        }
+    ],
+
+    "Selection": [
+        {
+            "level": 1,
+            "goal": "In the first image, an item will be shown on the left margin that you need to remember. In the following images, several random items will be generated in the scene, and your need to select the one you recall. If you understand the rules, select the 'continue' action to start the task.",
+            "goal_1": "In the first image, an item will be shown on the left margin that you need to remember. In the following images, several random items will be generated in the scene, and your need to select the one you recall.",
+            "action": {
+                "continue": "continue",
+                "choose_item": "choose {type} with label {obj_id}"
+            }
+        },
+        {
+            "level": [2, 3],
+            "goal": "In the first image, some items will be shown on the left margin that you need to remember. In the following images, several random items will be generated in the scene, and your need to select all the items you recall one by one. If you understand the rules, select the 'continue' action to start the task.",
+            "goal_1": "In the first image, some items will be shown on the left margin that you need to remember. In the following images, several random items will be generated in the scene, and your need to select all the items you recall one by one.",
+            "action": {
+                "continue": "continue",
+                "choose_item": "choose {type} with label {obj_id}"
+            }
+        }
+    ],
+
+    "Sorting": [
+        {
+            "level": 1,
+            "goal": "{rule} Rank the {type} in the backpack from {property} in position I, II.",
+            "action": {
+                "place_item": "place {type} from backpack {backpack_id} at grid {obj_name}"
+            }
+        },
+        {
+            "level": 2,
+            "goal": "{rule} Rank the {type} in the backpack from {property} in position I, II, III.",
+            "action": {
+                "place_item": "place {type} from backpack {backpack_id} at grid {obj_name}"
+            }
+        },
+        {
+            "level": 3,
+            "goal": "{rule} Rank the {type} in the backpack from {property} in position I, II, III, IV.",
+            "action": {
+                "place_item": "place {type} from backpack {backpack_id} at grid {obj_name}"
+            }
+        }
+    ]
+
+}
