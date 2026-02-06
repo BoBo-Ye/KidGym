@@ -93,12 +93,7 @@ class Puzzle(KidGymTask):
         random.shuffle(actions)
         return actions
     
-    def get_info_img(self):
-        info_bg = np.ones((TILE_PIXEL * 9, TILE_PIXEL * 2, 4), dtype = np.uint8) * 255
-        target_img = ImgOverlay(ImgZoom(LoadImage(f"{IMG_BASE_PATH}/game/bag_grid.png"), 1.1), ImgZoom(self.target, 0.75), middle_center=True)
-        info_img = ImgOverlay(info_bg, target_img, middle_center=True)
-        
-        return info_img
+
     
     def extract_actions(self, instruction: str) -> list:
         """
@@ -116,9 +111,6 @@ class Puzzle(KidGymTask):
             self.correct_num += 1
 
         return actions
-    
-    def check_grid(self) -> bool:
-        return True
 
     def check_goal(self) -> tuple[bool, bool]:
         """
@@ -137,3 +129,13 @@ class Puzzle(KidGymTask):
             return True, True
         
         return False, True
+    
+    def check_grid(self) -> bool:
+        return True
+
+    def get_info_img(self):
+        info_bg = np.ones((TILE_PIXEL * 9, TILE_PIXEL * 2, 4), dtype = np.uint8) * 255
+        target_img = ImgOverlay(ImgZoom(LoadImage(f"{IMG_BASE_PATH}/game/bag_grid.png"), 1.1), ImgZoom(self.target, 0.75), middle_center=True)
+        info_img = ImgOverlay(info_bg, target_img, middle_center=True)
+
+        return info_img

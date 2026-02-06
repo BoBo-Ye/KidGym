@@ -49,12 +49,6 @@ class Counting(KidGymTask):
 
         return self.goal
             
-    def render(self):
-        """
-        Render the current scene based on the task.
-        """
-        return super().render()
-        
     def generate_actions(self) -> list:
         """
         ## Action
@@ -74,42 +68,22 @@ class Counting(KidGymTask):
         actions.append(action)   
         return actions
     
-    def extract_actions(self, instruction: str) -> list:
-        """
-        Extract the low-level actions from the high-level instruction.
-        """
-        self.task_terminate = False
-        if "I" in instruction:
-            self.task_terminate = True
-            return [ACTION.ROTATE]
-        target_obj_id = DecodeFirstNumber(instruction)
-        target_obj = self.grid.get_obj_with_id(target_obj_id)
-        actions = self.grid.extract_path(target_obj.pos)
-        actions.append(ACTION.PICK)
-        return actions
-    
-    def check_grid(self) -> bool:
-        return super().check_grid()
-
     def check_goal(self) -> tuple[bool, bool]:
-        """
-        Check whether the goal is achieved based on the task.
-        Return: task_success(bool), terminated(bool)
-        """
-        value = 0
-        for obj in self.bag.objs:
-            if obj:
-                value += obj.value
-        
-        if self.task_terminate:
-            if value == self.collect_num:
-                # print("Game success! You collected {num}/{_num}!".format(num=value, _num=self.collect_num))
-                return True, True
-            else:
-                # print("Game failed! You collected {num}/{_num}!".format(num=value, _num=self.collect_num))
+            """
+            Check whether the goal is achieved based on the task.
+            Return: task_success(bool), terminated(bool)
+            """
+            value = 0
+            for obj in self.bag.objs:
+                if obj:
+                    value += obj.value
+            
+            if self.task_terminate:
+                if value == self.collect_num:
+                    return True, True
+                else:
+                    return False, True
+            if self.agent.bag.full and value < self.collect_num:
                 return False, True
-        if self.agent.bag.full and value < self.collect_num:
-            # print("Game failed! You collected {num}/{_num}!".format(num=value, _num=self.collect_num))
-            return False, True
 
-        return False, False
+            return False, False

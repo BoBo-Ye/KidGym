@@ -98,9 +98,6 @@ class Sorting(KidGymTask):
             self.correct += 1
 
         return actions
-    
-    def check_grid(self) -> bool:
-        return super().check_grid()
 
     def check_goal(self) -> tuple[bool, bool]:
         """
