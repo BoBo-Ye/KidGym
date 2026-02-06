@@ -128,7 +128,8 @@ class KidGymTask(gym.Env):
     @abstractmethod
     def get_info_img(self):
         """
-        Get the information image.
+        Get the information image side bar.
+        Different task can inherit this method to add more information.
         """
         info_bg = np.ones((TILE_PIXEL * 9, TILE_PIXEL * 2, 4), dtype = np.uint8) * 255
         return info_bg
@@ -153,6 +154,7 @@ class KidGymTask(gym.Env):
         bg_img_path = os.path.join(IMG_BASE_PATH, f"{self.type}/{RESOURCE[self.type]['background']}.png")
         bg_img = LoadImage(bg_img_path)
         
+        # TODO: special case: figure and maze
         if self.type == "figure":
             img = ImgOverlay(bg_img, grid_img, bottom_center=True, offset = (TILE_PIXEL, -122))
         elif self.type == "maze":
@@ -181,7 +183,42 @@ class KidGymTask(gym.Env):
         self.actions = self.generate_actions()
         random.shuffle(self.actions)
         self.action_space = gym.spaces.Discrete(len(self.actions))
+    
+    @abstractmethod
+    def extract_actions(self, instruction: str) -> list:
+        """
+        Extract the low-level actions from the high-level instruction.
+        """
+        
+        self.task_terminate = False
 
+        if "pick" in instruction or "choose" in instruction or "obtain" in instruction:
+            target_obj_id = DecodeFirstNumber(instruction)
+            target_obj = self.grid.get_obj_with_id(target_obj_id)
+            actions = self.grid.extract_path(target_obj.pos)
+            actions.append(ACTION.PICK)
+
+        elif "put" in instruction or "use" in instruction or "place" in instruction:
+            target_id = DecodeFirstNumber(instruction)
+            if target_id is None:
+                target_id = DecodeFirstRoman(instruction)
+                target_obj = self.grid.get_obj_with_name(target_id)
+                self.grid.objs.remove(target_obj)
+            else:
+                target_obj = self.grid.get_obj_with_id(target_id)
+
+            bag_id = DecodeFirstLetter(instruction)
+            actions = self.grid.extract_path(target_obj.pos)
+            actions.append(ACTION(ACTION.DROP_A + LETTER_TO_NUMBER[bag_id]))
+        
+        elif "continue" in instruction:
+            actions = ["continue"]
+
+        elif "already" in instruction:
+            self.task_terminate = True
+            actions = [ACTION.ROTATE]  # rotate is a special action, it will not change the grid
+        
+        return actions
     
     @abstractmethod
     def generate_scene_and_goal(self):
@@ -196,21 +233,7 @@ class KidGymTask(gym.Env):
         Generate high-level action list based on the task.
         """
         raise NotImplementedError
-    
-    @abstractmethod
-    def extract_actions(self, instruction: str) -> list:
-        """
-        Extract the low-level actions from the high-level instruction.
-        """
-        raise NotImplementedError
-    
-    @abstractmethod
-    def extract_low_level_actions(self, instruction: str) -> list:
-        """
-        Extract the low-level actions.
-        """
-        raise NotImplementedError
-    
+
     @abstractmethod
     def check_grid(self) -> bool:
         """

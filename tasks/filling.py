@@ -79,12 +79,6 @@ class Filling(KidGymTask):
         
         return self.goal
 
-    def render(self):
-        """
-        Render the current scene based on the task.
-        """
-        return super().render()
-        
     def generate_actions(self) -> list:
         """
         ## Action
@@ -103,6 +97,24 @@ class Filling(KidGymTask):
         
         random.shuffle(actions)
         return actions
+    
+    def check_goal(self) -> tuple[bool, bool]:
+        """
+        ## Finish Condition
+            1. Place the correct piece in the blank frame. (reward: 1)
+            2. Place the wrong piece in the blank frame. (reward: 0)
+        """
+        num = 0
+        for obj in self.bag.objs:
+            if obj:
+                num += 1
+        if num != 4 - self.match_pieces:
+            return False, False
+        
+        if self.correct_num == self.match_pieces:
+            return True, True
+        
+        return False, True
     
     def get_info_img(self):
         info_bg = np.ones((TILE_PIXEL * 9, TILE_PIXEL * 2, 4), dtype = np.uint8) * 255
@@ -128,23 +140,3 @@ class Filling(KidGymTask):
 
         return actions
     
-    def check_grid(self) -> bool:
-        return super().check_grid()
-
-    def check_goal(self) -> tuple[bool, bool]:
-        """
-        ## Finish Condition
-            1. Place the correct piece in the blank frame. (reward: 1)
-            2. Place the wrong piece in the blank frame. (reward: 0)
-        """
-        num = 0
-        for obj in self.bag.objs:
-            if obj:
-                num += 1
-        if num != 4 - self.match_pieces:
-            return False, False
-        
-        if self.correct_num == self.match_pieces:
-            return True, True
-        
-        return False, True

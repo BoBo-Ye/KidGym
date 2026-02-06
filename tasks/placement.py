@@ -74,27 +74,11 @@ class Placement(KidGymTask):
         
         actions = []
         for i in range(0, len(self.roman)):
-            action_template = action_templates["place_object"]
+            action_template = action_templates["place_item"]
             action = FillTemplate(action_template, {"place_obj_name": self.place_obj.name, "grid_id": self.roman[i]})
             actions.append(action)
         random.shuffle(actions)
         return actions
-    
-    def extract_actions(self, instruction: str) -> list:
-        """
-        Extract the low-level actions from the high-level instruction.
-        """
-        target_pos_name = DecodeFirstRoman(instruction)
-        target_obj = self.grid.get_obj_with_name(target_pos_name)
-        actions = self.grid.extract_path(target_obj.pos)
-        self.grid.objs.remove(target_obj)
-        bag_id = 'A'
-        actions.append(ACTION(ACTION.DROP_A + LETTER_TO_NUMBER[bag_id]))
-
-        return actions
-    
-    def check_grid(self) -> bool:
-        return True
 
     def check_goal(self) -> tuple[bool, bool]:
         """
@@ -164,3 +148,6 @@ class Placement(KidGymTask):
         if obj.c_pk:
             return True, True
         return False, True
+    
+    def check_grid(self) -> bool:
+        return True

@@ -202,19 +202,31 @@ def DecodeFirstNumber(instruction: str) -> int:
     """
     Decode the number in the instruction.
     """
-    return int(re.findall(r'[0123456789]', instruction)[0])
+    num = re.findall(r'[0123456789]', instruction)
+    if num:
+        return int(num[0])
+    else:
+        return None
 
 def DecodeFirstLetter(instruction: str) -> str:
     """
     Decode the letter in the instruction.
     """
-    return re.findall(r'[ABCDEFGHIJKLMNOPQRSTUVWXYZ]', instruction)[0]
+    letter = re.findall(r'[ABCDEFGHIJKLMNOPQRSTUVWXYZ]', instruction)
+    if letter:
+        return letter[0]
+    else:
+        return None
 
 def DecodeFirstRoman(instruction: str) -> str:
     """
     Decode the roman number in the instruction.
     """
-    return re.findall(r'\b(IX|VIII|VII|VI|V|IV|III|II|I)\b', instruction)[0]
+    roman = re.findall(r'\b(IX|VIII|VII|VI|V|IV|III|II|I)\b', instruction)
+    if roman:
+        return roman[0]
+    else:
+        return None
 
 def a_star_search(grid, start, goal):
     start = start[::-1]

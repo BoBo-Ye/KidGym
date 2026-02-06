@@ -46,7 +46,7 @@ class Memory_Filling(KidGymTask):
         missing_pieces = []
         self.bag_pieces = []
         for i in range(len(pieces)):
-            obj = Obj(pieces[i], "animal", position_id = i + 1, correct_id = i + 1)
+            obj = Obj(pieces[i], "animal", position_id = i + 1, visible = False, correct_id = i + 1)
             self.pieces.append(obj)
             if i in self.missing:
                 self.bag_pieces.append(obj)
@@ -69,21 +69,10 @@ class Memory_Filling(KidGymTask):
             for piece in other_pieces:
                 obj = Obj(piece, "animal")
                 self.bag_pieces.append(obj)
-        
         random.shuffle(self.bag_pieces)
         
         self.goal = self.get_template()["goal"]
-        
         return self.goal
-
-    def render(self):
-        """
-        Render the current scene based on the task.
-        """
-        if self.cur_step == 1:
-            for piece in self.bag_pieces:
-                self.bag.add(piece) 
-        return super().render()
         
     def generate_actions(self) -> list:
         """
@@ -150,9 +139,6 @@ class Memory_Filling(KidGymTask):
 
         return actions
     
-    def check_grid(self) -> bool:
-        return super().check_grid()
-
     def check_goal(self) -> tuple[bool, bool]:
         """
         ## Finish Condition
@@ -170,3 +156,12 @@ class Memory_Filling(KidGymTask):
             return True, True
         
         return False, True
+   
+    def render(self):
+        """
+        Render the current scene based on the task.
+        """
+        if self.cur_step == 1:
+            for piece in self.bag_pieces:
+                self.bag.add(piece) 
+        return super().render()
