@@ -89,6 +89,17 @@
         }
     ],
 
+    "Decode_Maze": [
+        {
+            "level": [1, 2, 3],
+            "goal": "There is a diamond in the scene, and your goal is to obtain it. Some paths are blocked by doors, and the key required to unlock each door color is shown in the left hint panel. You must consult the hint panel and use the specified key to open the corresponding door.",
+            "action": {
+                "obtain_item": "obtain item with label {obj_id}",
+                "open_door": "use the key in backpack {backpack_id} to unlock door with label {obj_id}"
+            }
+        }
+    ],
+
     "Placement": [
         {
             "level": 1,
