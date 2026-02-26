@@ -1,6 +1,6 @@
 # Temporary files
 tmp.png
-
+examples/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

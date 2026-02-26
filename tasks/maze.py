@@ -8,8 +8,7 @@ class Maze(KidGymTask):
     """
     ## Description
         Agent must obtain the diamond in a maze with several locked doors.
-        The agent needs to collect and use the corresponding colored keys 
-        to unlock these doors.
+        The agent needs to collect and use the same colored keys to unlock these doors.
     """
     def __init__(self, 
                  match_pairs: int = 1,
@@ -113,4 +112,164 @@ class Maze(KidGymTask):
         return True
 
     def check_grid(self) -> bool:
+
+        def bfs(self, grid, queue, visited, visited_key, visited_door):
+            treasure = 0
+            while queue:
+                x, y = queue.popleft()
+                for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+                    nx, ny = x + dx, y + dy
+                    # make sure in grid
+                    if not self.grid.in_grid(nx, ny):
+                        continue
+                    # make sure not visited
+                    if (nx, ny) in visited:
+                        continue
+                    # make sure not block
+                    if grid[nx, ny] == 0:
+                        continue
+                    # record visited key
+                    if grid[nx, ny] == 2:
+                        visited_key.append((nx, ny))
+                    #record visited door
+                    if grid[nx, ny] == 3:
+                        visited_door.append((nx, ny))
+                    # add moveable grid in queue
+                    if grid[nx, ny] == 4:
+                        treasure += 1
+                    if grid[nx, ny] == 1:
+                        queue.append((nx, ny))
+                    # mark as visited
+                    visited.add((nx, ny))
+                    
+            return visited_key, visited_door, treasure
+        
+        def check(self, grid, queue, visited):
+            while queue:
+                x, y = queue.popleft()
+                for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+                    nx, ny = x + dx, y + dy
+                    # make sure in grid
+                    if not self.grid.in_grid(nx, ny):
+                        continue
+                    # make sure not visited
+                    if (nx, ny) in visited:
+                        continue
+                    # make sure not block
+                    if grid[nx, ny] == 0:
+                        continue
+                    if grid[nx, ny] != 0:
+                        queue.append((nx, ny))
+                    # mark as visited
+                    visited.add((nx, ny))         
+            return len(visited)
+            
+        grid = np.ones((GRID_SIZE, GRID_SIZE), dtype=int)
+        
+        can_walk = 25
+        for obj in self.grid.objs:
+            if not obj.c_pk and not hasattr(obj, "c_op"):
+                can_walk -= 1
+        
+        for obj in self.grid.objs:
+            if obj.pos is None:
+                return False
+            if obj.c_pk:
+                if not hasattr(obj, "save"):
+                    grid[obj.pos[1]][obj.pos[0]] = 2
+                else:
+                    grid[obj.pos[1]][obj.pos[0]] = 4 # treasure
+            elif hasattr(obj, "c_op"):
+                grid[obj.pos[1]][obj.pos[0]] = 3
+            else:
+                grid[obj.pos[1]][obj.pos[0]] = 0
+
+        def check_connection_conditions(grid, rows, cols):
+            visited = [[False for _ in range(cols)] for _ in range(rows)]
+            
+            for i in range(rows):
+                for j in range(cols):
+                    if grid[i][j] == 0 and not visited[i][j]:
+                        queue = deque()
+                        queue.append((i, j))
+                        visited[i][j] = True
+                        has_outer = False
+                        while queue:
+                            x, y = queue.popleft()
+                            if x == 0 or x == rows - 1 or y == 0 or y == cols - 1:
+                                has_outer = True
+                            for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+                                nx = x + dx
+                                ny = y + dy
+                                if 0 <= nx < rows and 0 <= ny < cols:
+                                    if grid[nx][ny] == 0 and not visited[nx][ny]:
+                                        visited[nx][ny] = True
+                                        queue.append((nx, ny))
+                        if not has_outer:
+                            return False
+            return True
+        
+        if not check_connection_conditions(grid, GRID_SIZE, GRID_SIZE):
+            return False
+
+        # invert x,y
+        start_pos = tuple(self.agent.pos[::-1])
+        queue = deque([start_pos])
+        visited = set([start_pos])
+        visited_key = []
+        visited_door = []   
+        if check(self, grid, queue, visited) != can_walk:
+            return False               
+        
+        queue = deque([start_pos])
+        visited = set([start_pos])
+        
+        round = 0
+        
+        self.valid_key_positions = []
+        self.valid_door_positions = []
+        
+        while (round < self.match_pairs):
+
+            visited_key, _, treasure = bfs(self, grid, queue, visited, visited_key, visited_door)
+            if treasure == 1:
+                return False
+            if len(visited_key) == 0:
+                return False
+            else:
+                num = 0 # number of doors can be open
+                key_visited = visited_key
+                for key in self.grid.objs:
+                    if tuple(key.pos[::-1]) in key_visited:
+                        grid[key.pos[1]][key.pos[0]] = 1
+                        queue = deque([start_pos])
+                        visited = set([start_pos])
+                        visited_key = []
+                        visited_door = []
+                        _, visited_door, treasure = bfs(self, grid, queue, visited, visited_key, visited_door)
+                        if treasure == 1:
+                            return False
+                        for door in self.grid.objs:
+                            if tuple(door.pos[::-1]) in visited_door:
+                                if hasattr(door, "c_op") and key.name == door.c_op:
+                                    num += 1
+                                    key_record = key
+                                    door_record = door
+                        grid[key.pos[1]][key.pos[0]] = 2
+                if num != 1:
+                    return False
+                grid[key_record.pos[1]][key_record.pos[0]] = 1
+                self.valid_key_positions.append(key_record.pos)
+                self.valid_door_positions.append(door_record.pos)
+                grid[door_record.pos[1]][door_record.pos[0]] = 1
+                queue = deque([start_pos])
+                visited = set([start_pos])
+                visited_key = []
+                visited_door = []
+                round += 1
+        
+        _, _, treasure = bfs(self, grid, queue, visited, visited_key, visited_door)
+        if treasure == 0:
+            return False
+                
         return True

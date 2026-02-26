@@ -13,6 +13,7 @@ TASK_NAMES = [
     "MMA_L1", "MMA_L2", "MMA_L3",
     "MFI_L1", "MFI_L2", "MFI_L3",
     "MDE_L1", "MDE_L2", "MDE_L3", 
+    "DMA_L1", "DMA_L2", "DMA_L3"
 ]
 
 def REGISTER_TASKS():
@@ -268,4 +269,25 @@ def REGISTER_TASKS():
                   'high_level': True, 'task_name': 'Memory_Decode_L3'}
     )
     
+    register(
+        id = 'DMA_L1',
+        entry_point = 'tasks.decode_maze:DecodeMaze',
+        kwargs = {'match_pairs': 1, 'max_steps': 4,
+                  'high_level': True, 'task_name': 'Decode_Maze_L1'}
+    )
+    
+    register(
+        id = 'DMA_L2',
+        entry_point = 'tasks.decode_maze:DecodeMaze',
+        kwargs = {'match_pairs': 2, 'max_steps': 6,
+                  'high_level': True, 'task_name': 'Decode_Maze_L2'}
+    )
+    
+    register(
+        id = 'DMA_L3',
+        entry_point = 'tasks.decode_maze:DecodeMaze',
+        kwargs = {'match_pairs': 3, 'max_steps': 8,
+                  'high_level': True, 'task_name': 'Decode_Maze_L3'}
+    )
+
 REGISTER_TASKS()
