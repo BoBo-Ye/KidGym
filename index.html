@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="PAPER_TITLE">
+  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
+  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>KIDGYM</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/logo.svg">
+  <link rel="apple-touch-icon" href="static/images/logo.svg">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "PAPER_TITLE",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">KidGym: A 2D Grid-Based Reasoning Benchmark for MLLMs</h1>
+            
+              <!-- <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                    <span class="author-block">
+                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                </span>
+              </div> -->
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">ShanghaiTech University AIDA Lab</span><br>
+                <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                <!-- <span style="font-size: 1.5rem; font-weight: bold;">ICLR 2026</span> -->
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                      <!-- TODO: Update with your arXiv paper ID -->
+                  <span class="link-block">
+                    <a href="https://openreview.net/pdf?id=Hj8Dc14nk1" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <span class="link-block">
+                    <a href="https://github.com/BoBo-Ye/KidGym" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- TODO: Update with your arXiv paper ID
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+
+                <!-- TODO: Update with your arXiv paper ID -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/spaces/BoBo-Ye/KidGym_Playground" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-rocket"></i>
+                  </span>
+                  <span>Playground</span>
+                </a>
+              </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Paper abstract -->
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Multimodal Large Language Models (MLLMs) combine the linguistic strengths
+of LLMs with the ability to process multimodal data, enabling them to address a
+broader range of visual tasks. Because MLLMs aim at more general, human-like
+competence than language-only models, we take inspiration from the Wechsler
+Intelligence Scales — an established battery for evaluating children by decomposing intelligence into interpretable, testable abilities. We introduce KIDGYM,
+a comprehensive 2D grid-based benchmark for assessing five essential capabilities
+of MLLMs: Execution, Perception Reasoning, Learning, Memory, and Planning. The benchmark comprises 12 unique tasks, each targeting at least one core
+capability, specifically designed to gauge MLLMs’ adaptability and developmental potential, mirroring the stages of children’s cognitive growth. Additionally, our
+tasks encompass diverse scenarios and objects with randomly generated layouts,
+ensuring a more accurate and robust evaluation of MLLM capabilities. KIDGYM
+is designed to be fully user-customizable and extensible, allowing researchers to
+create new evaluation scenarios and adjust difficulty levels to accommodate the
+rapidly growing MLLM community. Through the evaluation of state-of-the-art
+MLLMs using KIDGYM, we identified significant insights into model capabilities and revealed several limitations of current models. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End paper abstract -->
+
+<section class="section" style="background-color:#F8FBFC">
+  <div class="container is-max-desktop">
+    <div class="columns is-vcentered">
+      <div class="column is-8">
+        <h2 class="title has-text-centered">What is KidGym?</h2>
+        <div class="content has-text-left" style="color: #000; font-size: 1.15rem;">
+          <p>
+            <!-- Insights from cognitive developmental psychology have consistently provided valuable guidance for the advancement of artificial intelligence.  -->
+            Drawing inspiration from the <b><a href="https://en.wikipedia.org/wiki/Wechsler_Intelligence_Scale_for_Children" target="_blank">Wechsler Intelligence Scales</a></b>, a widely recognized intelligence test for children, 
+            we define 5 essential abilities required of current MLLMs: <b>Execution</b>, <b>Memory</b>, <b>Learning</b>, <b>Planning</b> and <b>Perception Reasoning</b>. 
+            To this end, we introduce KidGym, a 2D grid-based benchmark for evaluating these five core capabilities.
+          </p>
+        </div>
+      </div>
+      <div class="column is-4">
+        <!-- TODO: Replace with your image -->
+        <img src="static/images/capability_preview.png" alt="KidGym Overview" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" style="background-color:#ffffff">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">News</h2>
+        <div class="content has-text-justified" style="color: #000;">
+          <ul class="fa-ul">
+            <li>[2025.09.24] We released KidGym and open-sourced the code on <b><a href="https://github.com/BoBo-Ye/KidGym" target="_blank">GitHub</a></b>. </li>
+            <li>[2026.01.26] KidGym has been accepted as a poster at <b>ICLR 2026</b>. 🎉 </li>
+            <li>[2026.03.10] We have created KidGym Playground on <b><a href="https://huggingface.co/spaces/BoBo-Ye/KidGym_Playground" target="_blank">Hugging Face</a></b> for online experience. </li>
+  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background-color:#F8FBFC">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Features</h2>
+        <img src="static/images/frame_preview.png" alt="KidGym Overview" loading="lazy" style="margin-bottom: 2rem;"/>
+      </div>
+    </div>
+    
+    <!-- Four Feature Blocks -->
+    <div class="columns is-multiline" style="margin-top: 2rem;">
+      <!-- Block 1: Mis-categorization -->
+      <div class="column is-6">
+        <div class="box" style="background-color: #ffffff; color: #ffffff; height: 100%; padding: 2rem;">
+          <h3 class="title is-5" style="color: #000000; margin-bottom: 1rem;"><b>Diverse Semantic Scenes</b></h3>
+          <p style="color: #000000; line-height: 1.6; text-align: left;">
+            In real-world applications, tasks of the same type often vary based on
+            their contextual scenarios. To capture these variations, we have designed a range of environments,
+            along with corresponding items to create immersive context-rich scenarios.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Block 2: Contamination risk -->
+      <div class="column is-6">
+        <div class="box" style="background-color: #ffffff; color: #ffffff; height: 100%; padding: 2rem;">
+          <h3 class="title is-5" style="color: #000000; margin-bottom: 1rem;"><b>Randomness</b></h3>
+          <p style="color: #000000; line-height: 1.6; text-align: left;">
+            Variability in task layouts is crucial for assessing MLLM robustness. 
+            In KidGym, each episode initializes with randomized element arrangements (e.g., item locations, agent spawn), 
+            ensuring no two rounds are identical. 
+          </p>
+        </div>
+      </div>
+      
+      <!-- Block 3: Sparse & heterogeneous formats -->
+      <div class="column is-6">
+        <div class="box" style="background-color: #ffffff; color: #ffffff; height: 100%; padding: 2rem;">
+          <h3 class="title is-5" style="color: #000000; margin-bottom: 1rem;"><b>Backpack and Hint Bar</b></h3>
+          <p style="color: #000000; line-height: 1.6; text-align: left;">
+            Current MLLMs often struggle to maintain contextual consistency, 
+            particularly when dealing with hidden details not explicitly represented in visual information.  
+            To address this problem, we designed a backpack and a hint bar as components of the task state, 
+            enabling agents to retrieve crucial information through out the task.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Block 4: Persistent difficulty -->
+      <div class="column is-6">
+        <div class="box" style="background-color: #ffffff; color: #ffffff; height: 100%; padding: 2rem;">
+          <h3 class="title is-5" style="color: #000000; margin-bottom: 1rem;"><b>Identification</b></h3>
+          <p style="color: #000000; line-height: 1.6; text-align: left;">
+            Each item in KidGym's task scenes is assigned unique identifiers. 
+            These identifiers enable the MLLMs to associate visual elements with text-based descriptions.
+            These labels not only optimize information retrieval but also reduce ambiguity in task execution, 
+            ensuring that the agent interprets and interacts with the environment accurately.
+            
+          </p>
+        </div>
+      </div>
+      
+      <!-- Block 5: Full Width -->
+      <div class="column is-12">
+        <div class="box" style="background-color: #ffffff; color: #ffffff; padding: 2rem;">
+          <h3 class="title is-5" style="color: #000000; margin-bottom: 1rem;"><b>High-level Actions</b></h3>
+          <p style="color: #000000; line-height: 1.6; text-align: left;">
+            MLLMs are not well-suited for executing atomic actions such as “go one step forward” or “turn left” in tasks requiring high operability. 
+            In contrast, MLLMs are better suited for handling macroscopic concepts and executing high-level actions. 
+            Building on this, each task in KidGym presents MLLMs with high-level actions. 
+            For instance, the agent can directly perform actions such as “pick up the basketball” instead of navigating step-by-step to its location and interacting with it. 
+            This reduction in operational granularity enables the model to focus on actions that are directly tied to meaningful outcomes, avoiding low-level controls.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-vcentered">
+
+        <!-- Left side: Title and Carousel -->
+        <div class="column is-5">
+
+          <!-- <h2 class="title is-3 has-text-centered"">Task Examples</h2> -->
+
+          <div id="results-carousel" class="carousel results-carousel" style="margin-bottom: 2rem;">
+            <div class="item" data-task="0">
+              <img src="tmp.png" alt="First research result visualization" loading="lazy"/>
+            </div>
+            <div class="item" data-task="1">
+              <img src="tmp.png" alt="Second research result visualization" loading="lazy"/>
+            </div>
+            <div class="item" data-task="2">
+              <img src="tmp.png" alt="Third research result visualization" loading="lazy"/>
+            </div>
+            <div class="item" data-task="3">
+              <img src="tmp.png" alt="Fourth research result visualization" loading="lazy"/>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right side: Task description -->
+        <div class="column is-7">
+          <div class="content" style="color: #000;">
+            <h3 class="title is-4" style="margin-bottom: 1rem;" id="task-title">Title</h3>
+            <p id="task-description" style="font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem;">
+              In this task, the agent is required to classify the objects in the grid into different categories based on their attributes. The agent must identify and categorize the objects correctly to complete the task.
+            </p>
+            
+            <h3 class="title is-4" style="margin-bottom: 1rem;">Goal</h3>
+            <p id="task-goal" style="font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem;">
+              Place {item_1} in the {color_1} basket and {item_2} in the {color_2} basket.
+            </p>
+            
+            <h3 class="title is-4" style="margin-bottom: 1rem;">Action Space</h3>
+            <ul id="task-actions" style="font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem; font-family: 'Courier New', monospace; background-color: #f5f5f5; padding: 1rem; border-radius: 4px; margin-left: -1rem; padding-left: 2.5rem;">
+              <li>pick up the item with label {item_id}</li>
+              <li>put the item from backpack {backpack_id} into the basket with label {basket_id}</li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End image carousel -->
+ 
+
+<section class="section" style="background-color:#F8FBFC">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">📊 Experiments Results</h2>
+        <div class="content has-text-justified" style="color: #000;">
+          <div class="content has-text-justified" style="color:#000;">
+            <p>
+              We evaluated 9 state-of-the-art MLLMs on <b>KidGym</b>, covering both closed-source and open-source models. 
+              For each task, we ran <b>100 zero-shot rounds</b> and evaluated every model on the identical set of tasks.
+            </p>
+          </div>
+          <figure style="text-align: center;">
+            <img src="static/images/result.png" style="width: 100%; height: auto;"/>
+            <figcaption style="font-style: normal; color: gray;">
+              Zero-shot performance comparison across 12 KidGym tasks. “L” denotes the task level. <br>
+              Performance is measured by the success rate over 100 rounds under the ground-truth optimal solution.
+            </figcaption>
+          </figure>
+
+          <div class="content has-text-justified" style="color:#000;">
+            <p>Through quantitative analysis, we identified 3 main challenges of current MLLMs.
+            </p>
+          </div>
+
+          <ul class="fa-ul">
+            <li><b>Challenges in Reasoning over Non-Semantic Visual Information.</b></li>
+            <li><b>Challenges in Identifying the Quantity of Items. </b> </li>
+            <li><b>Challenges in Dealing with Composite Tasks. </b> </li>
+          </ul>
+
+
+          <div class="content has-text-justified" style="color:#000;">
+            <p>
+              To provide deeper insights into the capabilities of MLLMs, 
+              we calculated <b>capability scores</b> across 5 dimensions and visualized them through radar map for each MLLM.
+            </p>
+          </div>
+
+          <figure style="text-align: center;">
+            <img src="static/images/radar.png" style="width: 100%; height: auto;"/>
+            <figcaption style="font-style: normal; color: gray;">
+              Five-dimensional capability radar chart.
+            </figcaption>
+          </figure>
+
+          <div class="content has-text-justified" style="color:#000;">
+            <p>
+              As shown in the capability radar map, all evaluated MLLMs generally score lower in
+              <b>Perception Reasoning</b> and <b>Planning</b> capabilities. While these models have progressed beyond basic
+              recognition tasks, they still struggle with more complex forms of visual cognition, particularly abstract and non-semantic ones. Similarly, the planning dimension requires further development to
+              enable models to systematically organize tasks, predict the consequences of actions, and implement
+              multi-step strategies for solving complex and composite problems.
+              
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@misc{ye2026kidgym,
+      title = {Children's Intelligence Tests Pose Challenges for MLLMs? KidGym: A 2D Grid-Based Reasoning Benchmark for MLLMs},
+      author = {Ye, Hengwei and Guan, Yuanting and Ge, Yuxuan and Zhu, Tianying and Guan, Zhenhan and Zhong, Yijia and Zhang, Yijing and Zhang, Han and Wu, Yingna and Tian, Zheng},
+      booktitle = {International Conference on Learning Representations (ICLR)},
+      year = {2026}
+  }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
