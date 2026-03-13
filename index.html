@@ -190,11 +190,30 @@
   <main id="main-content">
   <section class="hero">
     <div class="hero-body">
+
+      <div class="header-background">
+
+        <img src="static/gifs/Classification.gif" alt="Classification task"/>
+        <img src="static/gifs/Selection.gif" alt="Selection task"/>
+        <img src="static/gifs/Sorting.gif" alt="Sorting task"/>
+        <img src="static/gifs/Maze.gif" alt="Maze task"/>
+        <img src="static/gifs/Filling.gif" alt="Filling task"/>
+        <img src="static/gifs/Puzzle.gif" alt="Puzzle task"/>
+        <img src="static/gifs/Placement.gif" alt="Placement task"/>
+        <img src="static/gifs/Counting.gif" alt="Counting task"/>
+        <img src="static/gifs/Decode_Maze.gif" alt="Decode Maze task"/>
+        <img src="static/gifs/Memory_Maze.gif" alt="Memory Maze task"/>
+        <img src="static/gifs/Memory_Decode.gif" alt="Memory Decode task"/>
+        <img src="static/gifs/Memroy_Filling.gif" alt="Memory Filling task"/>
+      </div>
+
+
+
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">KidGym: A 2D Grid-Based Reasoning Benchmark for MLLMs</h1>
+            <h1 class="title is-1 publication-title"><br><br>KidGym: A 2D Grid-Based Reasoning Benchmark for MLLMs</h1>
             
               <!-- <div class="is-size-5 publication-authors">
                 <span class="author-block">
@@ -429,43 +448,59 @@ MLLMs using KIDGYM, we identified significant insights into model capabilities a
       <div class="columns is-vcentered">
 
         <!-- Left side: Title and Carousel -->
-        <div class="column is-5">
+        <div class="column is-7">
 
           <!-- <h2 class="title is-3 has-text-centered"">Task Examples</h2> -->
 
           <div id="results-carousel" class="carousel results-carousel" style="margin-bottom: 2rem;">
             <div class="item" data-task="0">
-              <img src="test.png" alt="First research result visualization" loading="lazy"/>
+              <img src="static/gifs/Classification.gif" alt="First research result visualization" loading="lazy"/>
             </div>
             <div class="item" data-task="1">
-              <img src="test.png" alt="Second research result visualization" loading="lazy"/>
+              <img src="static/gifs/Selection.gif" alt="Second research result visualization" loading="lazy"/>
             </div>
             <div class="item" data-task="2">
-              <img src="test.png" alt="Third research result visualization" loading="lazy"/>
+              <img src="static/gifs/Sorting.gif" alt="Third research result visualization" loading="lazy"/>
             </div>
             <div class="item" data-task="3">
-              <img src="test.png" alt="Fourth research result visualization" loading="lazy"/>
+              <img src="static/gifs/Maze.gif" alt="Fourth research result visualization" loading="lazy"/>
+            </div>
+            <div class="item" data-task="4">
+              <img src="static/gifs/Filling.gif" alt="Fourth research result visualization" loading="lazy"/>
+            </div>
+            <div class="item" data-task="5">
+              <img src="static/gifs/Puzzle.gif" alt="Fourth research result visualization" loading="lazy"/>
+            </div>
+            <div class="item" data-task="6">
+              <img src="static/gifs/Placement.gif" alt="Fourth research result visualization" loading="lazy"/>
+            </div>
+            <div class="item" data-task="7">
+              <img src="static/gifs/Counting.gif" alt="Fourth research result visualization" loading="lazy"/>
+            </div>
+            <div class="item" data-task="8">
+              <img src="static/gifs/Decode_Maze.gif" alt="Fourth research result visualization" loading="lazy"/>
+            </div>
+            <div class="item" data-task="9">
+              <img src="static/gifs/Memory_Maze.gif" alt="Fourth research result visualization" loading="lazy"/>
+            </div>
+            <div class="item" data-task="10">
+              <img src="static/gifs/Memory_Decode.gif" alt="Fourth research result visualization" loading="lazy"/>
+            </div>
+            <div class="item" data-task="11">
+              <img src="static/gifs/Memroy_Filling.gif" alt="Fourth research result visualization" loading="lazy"/>
             </div>
           </div>
         </div>
         
         <!-- Right side: Task description -->
-        <div class="column is-7">
+        <div class="column is-5">
           <div class="content" style="color: #000;">
             <h3 class="title is-4" style="margin-bottom: 1rem;" id="task-title">Title</h3>
-            <p id="task-description" style="font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem;">
-              In this task, the agent is required to classify the objects in the grid into different categories based on their attributes. The agent must identify and categorize the objects correctly to complete the task.
-            </p>
+            <p id="task-description" style="font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem;"></p>
             
-            <h3 class="title is-4" style="margin-bottom: 1rem;">Goal</h3>
-            <p id="task-goal" style="font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem;">
-              Place {item_1} in the {color_1} basket and {item_2} in the {color_2} basket.
-            </p>
-            
-            <h3 class="title is-4" style="margin-bottom: 1rem;">Action Space</h3>
-            <ul id="task-actions" style="font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem; font-family: 'Courier New', monospace; background-color: #f5f5f5; padding: 1rem; border-radius: 4px; margin-left: -1rem; padding-left: 2.5rem;">
-              <li>pick up the item with label {item_id}</li>
-              <li>put the item from backpack {backpack_id} into the basket with label {basket_id}</li>
+            <h3 class="title is-4" style="margin-bottom: 1rem;">Goal Prompt Example</h3>
+            <ul id="task-goal" style="font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem; font-family: 'Courier New', monospace; background-color: #f5f5f5; padding: 1rem; border-radius: 4px; margin-left: -1rem; padding-left: 2.5rem;">
+              <li>Place hamburger in the green basket and sushi in the blue basket.</li>
             </ul>
             
           </div>

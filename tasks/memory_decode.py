@@ -139,7 +139,7 @@ class Memory_Decode(KidGymTask):
             self.goal = self.get_template()["goal_1"]
             info_bg = np.ones((TILE_PIXEL * 9, TILE_PIXEL * 2, 4), dtype = np.uint8) * 255
             render_table_fg = render_decode_relationships(self.objs_1, self.objs_2)        
-            target_img = ImgOverlay(ImgZoom(LoadImage(f"{IMG_BASE_PATH}/game/bag_grid.png"), 0.6), ImgZoom(self.target_obj.img, 0.6), middle_center=True)
-            info_bg = ImgOverlay(info_bg, target_img, middle_center=True, offset=(0, -TILE_PIXEL * 3))
+            target_img = ImgOverlay(ImgZoom(LoadImage(f"{IMG_BASE_PATH}/game/bag_grid.png"), 1.1), ImgZoom(self.target_obj.img, 0.9), middle_center=True)
+            info_bg = ImgOverlay(info_bg, target_img, middle_center=True)
             return info_bg
         

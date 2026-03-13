@@ -4,61 +4,95 @@ window.HELP_IMPROVE_VIDEOJS = false;
 const taskData = [
     {
         title: "Classification (CL)",
-        description: "In this task, the agent is required to classify the objects in the grid into different categories based on their attributes. The agent must identify and categorize the objects correctly to complete the task.",
-        actions: [
-            "pick up the item with label {item_id}",
-            "put the item from backpack {backpack_id} into the basket with label {basket_id}"
-        ],
-        goal: "Place {item_1} in the {color_1} basket and {item_2} in the {color_2} basket."
+        description: "In CL task, the agent is required to place each item into its designated container based on specific instructions. It is designed to evaluate the MLLM's Execution ability, which involves translating an understanding of goals into effective actions. The agent's performance in this task measures its accuracy in following instructions within a structured environment.",
+        goal: "Place hamburger in the green basket and sushi in the blue basket."
     },
     {
         title: "Selection (SE)",
-        description: "In this task, the agent needs to navigate through the grid environment to reach a specific destination while avoiding obstacles. The agent must plan an efficient path to achieve the goal.",
-        actions: [
-            "move to position {x}, {y}",
-            "pick up the key with label {key_id}",
-            "open the door with label {door_id}"
-        ],
-        goal: "Navigate to the exit while collecting all required keys and avoiding obstacles."
+        description: "In SE task, several random items will appear in the left hint bar at first. Once the task starts, these items will be hidden, and the agent need to select the items that appeared in the hint bar before. This task evaluates the MLLM's Memory capability by requiring it to remember and recall the items previously shown.",
+        goal: "In the first image, an item will be shown on the left hint bar that you need to remember. In the following images, several random items will be generated in the scene, and you need to select the ones you recall."
+    },
+    {
+        title: "Sorting (SO)",
+        description: "In SO task, the agent is presented with a rule that may contradict real-world knowledge. The agent is expected to correctly rank the animals based on the given rule. This task evaluates the MLLM's Learning abilities, as it requires the agent to comprehend a novel rule that may conflict with its prior knowledge.",
+        goal: "In this world, the slower the animal is, the heavier it is. Rank the animal in the backpack from heaviest to lightest in position I, II, III."
     },
     {
         title: "Maze (MA)",
-        description: "This task evaluates the agent's ability to remember and recall information. The agent must observe patterns or sequences and reproduce them accurately after a delay period.",
-        actions: [
-            "observe the pattern",
-            "recall and reproduce the sequence",
-            "select item {item_id} in order"
-        ],
-        goal: "Reproduce the exact sequence of items shown earlier in the correct order."
+        description: "In MA task, the agent must obtain the diamond in a maze with several locked doors. The agent needs to collect the corresponding colored keys to unlock these doors. This task primarily evaluates the MLLM's Planning ability, as the agent should carefully devise a strategy to reach the diamond with the fewest steps.",
+        goal: "There is a diamond shown in the scene, and you need to obtain the diamond. When your path is blocked by a door, you can use a key of the same color to unlock it. Note: You must pick up the key first before you can use it to unlock doors."
     },
     {
         title: "Filling (FI)",
-        description: "In this task, the agent must create and execute a multi-step plan to achieve a complex goal. This requires reasoning about dependencies between actions and optimizing the sequence of steps.",
-        actions: [
-            "pick up tool {tool_id}",
-            "use tool on object {object_id}",
-            "combine items {item_1} and {item_2}"
-        ],
-        goal: "Complete the construction by using tools and materials in the correct sequence."
-    }
+        description: "In FI task, the agent will be presented with an image in which a quarter section has been removed. Then it needs to restore the image by selecting the correct missing piece from a set of distractors in the backpack. This task primarily evaluates the MLLM's Perception Reasoning ability, as it requires the agent to develop a holistic understanding of the image and infer the missing part.",
+        goal: "There is a target item shown on the left hint bar. You need to fill the correct pieces from the backpack to complete the missing parts of the frame in the scene, ensuring they match and align with the target item."
+    },
+    {
+        title: "Puzzle (PU)",
+        description: "In PU task, a target image composed of 4 puzzle pieces is displayed in the hint and the agent needs to assemble the scattered puzzle pieces from its backpack to reconstruct the target. This task primarily evaluates the MLLM's Perception Reasoning in abstract visual mode, as it requires the agent to grasp the image's overall structure, which cannot be easily conveyed through language.",
+        goal: "There is a target item shown on the left hint bar. You need to fill the correct pieces from the backpack to complete the missing parts of the frame in the scene, ensuring they match and align with the target item."
+    },
+    {
+        title: "Placement (PL)",
+        description: "In PL task, the agent is required to place the item in the opposite position based on the given goal. This task primarily evaluates the MLLM's abilities in Learning and Perception Reasoning, as it necessitates an understanding of placement rules and the awareness of spatial orientation.",
+        goal: "A direction will be provided: northeast. Determine its opposite direction, and then place grape in the corresponding location around cherry."
+    },
+    {
+        title: "Counting (CO)",
+        description: "In CO task, the scene contains several piles of items, with quantities ranging from 1 to 3. At the start of the task, the agent is given a target number and then it must collect exactly that number of items. This task primarily evaluates the MLLM's Perception Reasoning and Planning abilities, focusing on the agent's awareness of item quantities and its strategic decision-making regarding how many items to collect at single time.",
+        goal: "Collect 6 eggs from the scene and place them in the backpack. Make sure you have gathered exactly this amount, no more and no less. You should be aware that there may be 1 to 3 items of different quantities in one grid."
+    },
+    {
+        title: "Decode Maze (DMA)",
+        description: "This task follows the same rules as the “Maze”, with an added challenge. The agent can no longer use a same-colored key to open a door. Instead, it must learn the “key-door” correspondence shown in the hint bar. This task evaluates the MLLM's Learning and Planning abilities, requiring the agent to leverage the hint information to make correct choices and formulate a series of plans to obtain the diamond as few steps as possible.",
+        goal: "There is a diamond in the scene, and your goal is to obtain it. Some paths are blocked by doors, and the key required to unlock each door color is shown in the left hint panel. You must consult the hint bar and use the specified key to open the corresponding door."
+    },
+    {
+        title: "Memory Maze (MMA)",
+        description: "This task follows the same rules as the “Maze”, with an added challenge. Before the task begins, the agent is shown the location of the diamond, but once the task starts, the diamond in the scene will be hidden and several treasure chests will appear. To succeed, the agent must correctly open the chest containing the diamond. This task primarily assesses the MLLM's Memory and Planning abilities, as the agent must recall the diamond's location and devise an effective strategy to retrieve it.",
+        goal: "In the first image, a diamond will be shown in the scene that you need to remember its location. In the following images, the diamond will not be shown and several treasure boxes will be generated in the scene. You must choose to open the treasure box located at the diamond's original position to obtain the diamond."
+    },
+
+    {
+        title: "Memory Decode (MDE)",
+        description: "In MDE task, the agent is provided with a hint bar, which contains a certain number of association rules between different items and it must remember the item relationships because these will be hidden once the task starts. This task evaluates the MLLM's abilities in Memory and Learning, as it requires the agent to retain and utilize the information from the hint bar to make accurate selections.",
+        goal: "In the first image, arrow-connected items with one-to-one correspondences will be shown on the left margin that you need to remember. In the following images, the correspondences will not be shown, and a target item will be generated in the black box in the upper left corner. You need to select the correct corresponding item for the target based on the pairing you remembered in the first imag."
+    },
+    {
+        title: "Memory Filling (MFI)",
+        description: "This task follows the same rules as “Filling”, with an added challenge. The agent must additionally remember the target, which will disappear once the task starts. This task primarily evaluates the MLLM's abilities in Perception Reasoning and Memory, as it necessitates recognizing the overall image and recalling specific details to identify the correct piece.",
+        goal: "In the first image, a target item will be shown on the left margin that you need to remember. In the following images, the target item will not be shown. You need to fill the correct pieces from the backpack to complete the missing parts of the frame in the scene, ensuring they match and align with the target item. "
+    },
 ];
 
 // Function to update task content
 function updateTaskContent(taskIndex) {
-    const task = taskData[taskIndex];
+    // Handle loop: ensure index is within valid range [0, taskData.length-1]
+    const validIndex = ((taskIndex % taskData.length) + taskData.length) % taskData.length;
+    const task = taskData[validIndex];
+    
+    if (!task) {
+        console.error('Task not found for index:', taskIndex, 'valid index:', validIndex);
+        return;
+    }
     
     // Update title
-    document.getElementById('task-title').textContent = task.title;
+    const titleElement = document.getElementById('task-title');
+    if (titleElement) {
+        titleElement.textContent = task.title;
+    }
     
     // Update description
-    document.getElementById('task-description').textContent = task.description;
-    
-    // Update action space
-    const actionsElement = document.getElementById('task-actions');
-    actionsElement.innerHTML = task.actions.map(action => `<li>${action}</li>`).join('');
+    const descriptionElement = document.getElementById('task-description');
+    if (descriptionElement) {
+        descriptionElement.textContent = task.description;
+    }
     
     // Update goal
-    document.getElementById('task-goal').textContent = task.goal;
+    const goalElement = document.getElementById('task-goal');
+    if (goalElement) {
+        goalElement.innerHTML = `<li>${task.goal}</li>`;
+    }
 }
 
 
@@ -199,15 +233,22 @@ $(document).ready(function() {
 	
     // Add event listener for carousel slide change
     if (carousels.length > 0) {
-        carousels[0].on('after:show', function(state) {
-            // Get the current slide index
-            const currentIndex = state.index;
-            // Update task content based on current slide
-            updateTaskContent(currentIndex);
-        });
+        const resultsCarousel = carousels.find(c => c.element && c.element.id === 'results-carousel');
         
-        // Initialize with first task
-        updateTaskContent(0);
+        if (resultsCarousel) {
+            // Only use before:show event with state.next
+            // This ensures text updates to the correct slide that will be shown
+            resultsCarousel.on('before:show', function(state) {
+                if (state && typeof state.next !== 'undefined') {
+                    const nextIndex = state.next;
+                    console.log('Carousel switching to index:', nextIndex);
+                    updateTaskContent(nextIndex);
+                }
+            });
+            
+            // Initialize with first task
+            updateTaskContent(0);
+        }
     }
     
     bulmaSlider.attach();

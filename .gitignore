@@ -9,6 +9,7 @@ __pycache__/
 
 # C extensions
 *.so
+gif.py
 
 # Distribution / packaging
 .Python
