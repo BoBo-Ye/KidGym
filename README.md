@@ -1,8 +1,16 @@
-# Children's Intelligence Tests Pose Challenges for MLLMs? KidGym: A 2D Grid-Based Reasoning Benchmark for MLLMs
+# KidGym: A 2D Grid-Based Reasoning Benchmark for MLLMs
 
 ![preview](./assets/readme/preview.png)
 
-Multimodal Large Language Models (MLLMs) combine the linguistic strengths of LLMs with the ability to process multimodal data, enabling them to address a broader range of visual tasks. This progression highlights a shift from language-only reasoning to integrated vision–language reasoning in children's development. Inspired by the Wechsler Intelligence Scales, we introduce **KidGym**, a comprehensive 2D grid-based benchmark for assessing five essential capabilities of MLLMs: Execution, Perception Reasoning, Learning, Memory, and Planning. The benchmark comprises 12 unique tasks, each targeting at least one core capability, specifically designed to gauge MLLMs' adaptability and developmental potential, mirroring the stages of children's cognitive growth. Additionally, our tasks encompass diverse scenarios and objects with randomly generated layouts, ensuring a more accurate and robust evaluation of MLLM capabilities. **KidGym** is designed to be fully user-customizable and extensible, allowing researchers to create new evaluation scenarios and adjust difficulty levels to accommodate the rapidly growing MLLM community. Through the evaluation of state-of-the-art MLLMs using **KidGym**, we identified significant insights into model capabilities and revealed several limitations of current models.
+Drawing inspiration from the **[Wechsler Intelligence Scales](https://en.wikipedia.org/wiki/Wechsler_Intelligence_Scale_for_Children)**, a widely recognized intelligence test for children, we define 5 essential abilities required of current MLLMs: **Execution**, **Memory**, **Learning**, **Planning** and **Perception Reasoning**. To this end, we introduce KidGym, a 2D grid-based benchmark for evaluating these five core capabilities.
+
+## News
+
+- [2025.09.24] We released KidGym and open-sourced the code on **[GitHub](https://github.com/BoBo-Ye/KidGym)**.
+- [2026.01.26] KidGym has been accepted as a poster at **ICLR 2026**. 🎉
+- [2026.03.10] We have created KidGym Playground on **[Hugging Face](https://huggingface.co/spaces/BoBo-Ye/KidGym_Playground)** for online experience.
+
+
 
 ## Tasks in KidGym
 
