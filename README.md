@@ -6,6 +6,8 @@
 <a href='https://huggingface.co/spaces/BoBo-Ye/KidGym_Playground'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Playground-red'></a>
 <a><img src="https://img.shields.io/github/stars/BoBo-Ye/KidGym"></a>
 </div>
+
+
 <img src="./static/images/frame_preview.png" alt="capability_preview" style="zoom:88%;" />
 
 Drawing inspiration from the **[Wechsler Intelligence Scales](https://en.wikipedia.org/wiki/Wechsler_Intelligence_Scale_for_Children)**, a widely recognized intelligence test for children, we define 5 essential abilities required of current MLLMs: **Execution**, **Memory**, **Learning**, **Planning** and **Perception Reasoning**. To this end, we introduce KidGym, a 2D grid-based benchmark for evaluating these five core capabilities.
@@ -80,10 +82,13 @@ For example, you can run `python main.py --task = CL_L1` to test Classification 
 ## Citing KidGym
 
 ```
-@inproceedings{ye2026kidgym,
-  title     = {Children's Intelligence Tests Pose Challenges for MLLMs? KidGym: A 2D Grid-Based Reasoning Benchmark for MLLMs},
-  author    = {Ye, Hengwei and Guan, Yuanting and Ge, Yuxuan and Zhu, Tianying and Guan, Zhenhan and Zhong, Yijia and Zhang, Yijing and Zhang, Han and Wu, Yingna and Tian, Zheng},
-  booktitle = {International Conference on Learning Representations (ICLR)},
-  year      = {2026}
-}
+@misc{ye2026childrensintelligencetestspose,
+        title={Children's Intelligence Tests Pose Challenges for MLLMs? KidGym: A 2D Grid-Based Reasoning Benchmark for MLLMs}, 
+        author={Hengwei Ye and Yuanting Guan and Yuxuan Ge and Tianying Zhu and Zhenhan Guan and Yijia Zhong and Yijing Zhang and Han Zhang and Yingna Wu and Zheng Tian},
+        year={2026},
+        eprint={2603.20209},
+        archivePrefix={arXiv},
+        primaryClass={cs.CL},
+        url={https://arxiv.org/abs/2603.20209}, 
+  }
 ```
