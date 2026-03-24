@@ -1,4 +1,4 @@
-# KidGym: A 2D Grid-Based Reasoning Benchmark for MLLMs
+# Children's Intelligence Tests Pose Challenges for MLLMs?KidGym: A 2D Grid-Based Reasoning Benchmark for MLLMs
 
 <div align="center">
 <a href='https://bobo-ye.github.io/KidGym/'><img src='https://img.shields.io/badge/%F0%9F%8C%90%20Homepage-00A3FF'></a>
@@ -6,12 +6,9 @@
 <a href='https://huggingface.co/spaces/BoBo-Ye/KidGym_Playground'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Playground-red'></a>
 <a><img src="https://img.shields.io/github/stars/BoBo-Ye/KidGym"></a>
 </div>
+<img src="./static/images/frame_preview.png" alt="capability_preview" style="zoom:88%;" />
 
 Drawing inspiration from the **[Wechsler Intelligence Scales](https://en.wikipedia.org/wiki/Wechsler_Intelligence_Scale_for_Children)**, a widely recognized intelligence test for children, we define 5 essential abilities required of current MLLMs: **Execution**, **Memory**, **Learning**, **Planning** and **Perception Reasoning**. To this end, we introduce KidGym, a 2D grid-based benchmark for evaluating these five core capabilities.
-
-<img src="./static/images/capability.png" alt="capability_preview" style="zoom:15%;" />
-
-
 
 ## News
 
