@@ -223,6 +223,13 @@ body {
   white-space: nowrap;
 }
 
+.author-block sup {
+  position: relative;
+  top: -0.5em;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
 .publication-banner img {
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
@@ -726,6 +733,16 @@ code {
   .button {
     width: 100%;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .publication-authors {
+    margin-inline: -0.75rem;
+  }
+
+  .author-row {
+    column-gap: 0.25em;
   }
 }
 
