@@ -81,14 +81,12 @@ For example, you can run `python main.py --task = CL_L1` to test Classification 
 
 ## Citing KidGym
 
-```
-@misc{ye2026childrensintelligencetestspose,
-        title={Children's Intelligence Tests Pose Challenges for MLLMs? KidGym: A 2D Grid-Based Reasoning Benchmark for MLLMs}, 
-        author={Hengwei Ye and Yuanting Guan and Yuxuan Ge and Tianying Zhu and Zhenhan Guan and Yijia Zhong and Yijing Zhang and Han Zhang and Yingna Wu and Zheng Tian},
-        year={2026},
-        eprint={2603.20209},
-        archivePrefix={arXiv},
-        primaryClass={cs.CL},
-        url={https://arxiv.org/abs/2603.20209}, 
-  }
+```bibtex
+@inproceedings{ye2026childrens,
+  title={Children's Intelligence Tests Pose Challenges for {MLLM}s? KidGym: A 2D Grid-Based Reasoning Benchmark for {MLLM}s},
+  author={Hengwei Ye and Yuanting Guan and Yuxuan Ge and Tianying Zhu and Yijia Zhong and YiJing Zhang and Han Zhang and Yingna Wu and Zheng Tian},
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026},
+  url={https://openreview.net/forum?id=Hj8Dc14nk1}
+}
 ```
